@@ -1,0 +1,5 @@
+#ORACLE
+SELECT user_id as user_id,INITCAP(name) as name FROM Users ORDER BY user_id;
+
+#MySQL
+SELECT user_id as user_id,CONCAT(SUBSTRING(UPPER(name),1,1),SUBSTRING(LOWER(name),2)) as name FROM Users ORDER BY user_id;
