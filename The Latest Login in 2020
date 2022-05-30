@@ -1,0 +1,1 @@
+SELECT user_id,MAX(time_stamp) as last_stamp FROM (SELECT user_id,time_stamp FROM Logins WHERE YEAR(time_stamp)='2020') as temp GROUP BY user_id;
